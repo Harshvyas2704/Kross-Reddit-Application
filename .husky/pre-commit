@@ -1,0 +1,3 @@
+echo "[ARCHITECT SHIELD ACTIVATED] Checking TypeScript & Formatting..."
+npm run type-check
+npx lint-staged
