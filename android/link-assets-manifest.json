@@ -1,0 +1,25 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/RedditSans-Bold.ttf",
+      "sha1": "1dd5c5b529ab92f83d6f5ffef645d796ab2605e7"
+    },
+    {
+      "path": "assets/fonts/RedditSans-Italic.ttf",
+      "sha1": "00b061dba59c56a4af7625c9d41c05ea485fb5ee"
+    },
+    {
+      "path": "assets/fonts/RedditSans-Medium.ttf",
+      "sha1": "3bce895efc278404d3d6301b0ca9feee6302e67b"
+    },
+    {
+      "path": "assets/fonts/RedditSans-Regular.ttf",
+      "sha1": "4506d71c79935c48bb7b067de5d0a84f10c6d0a0"
+    },
+    {
+      "path": "assets/fonts/RedditSans-SemiBold.ttf",
+      "sha1": "4faeedeafd408d2f62c99730fed4dae4cf6f7572"
+    }
+  ]
+}
