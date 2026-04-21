@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useAuthStore } from '@store/useAuthStore';
 
 export const apiClient = axios.create({
-  baseURL: 'localHost:8777/krossreddit/api/v1', // Change this later
+  baseURL: 'http://localhost:8777/api/v1/',
   timeout: 10000,
 });
 
@@ -25,7 +25,7 @@ apiClient.interceptors.response.use(
         if (!refreshToken) throw new Error('Refresh token is missing');
 
         const { data } = await axios.post(
-          'localHost:8777/krossreddit/api/v1/refresh',
+          'http://localhost:8777/api/v1/refresh',
           {
             token: refreshToken,
           },

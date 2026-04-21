@@ -3,7 +3,7 @@ import React from 'react';
 import { useAuthStore } from '@store/useAuthStore';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import LoginScreen from '@features/auth/screens/LoginScreen';
+import { LoginScreen } from '@features/auth/screens/LoginScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,7 +15,11 @@ const RootNavigator = () => {
   const accessToken = useAuthStore(state => state.accessToken);
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
         {accessToken ? (
           <Stack.Screen name="feed" component={FeedScreen} />
         ) : (
