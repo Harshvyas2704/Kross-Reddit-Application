@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useAuthStore } from '@store/useAuthStore';
 
 export const apiClient = axios.create({
-  baseURL: 'http://localhost:8777/api/v1/',
+  baseURL: 'http://10.0.2.2:8777/api/v1/',
   timeout: 10000,
 });
 
@@ -25,7 +25,7 @@ apiClient.interceptors.response.use(
         if (!refreshToken) throw new Error('Refresh token is missing');
 
         const { data } = await axios.post(
-          'http://localhost:8777/api/v1/refresh',
+          'http://10.0.2.2:8777/api/v1/refresh',
           {
             token: refreshToken,
           },
